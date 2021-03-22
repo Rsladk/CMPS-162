@@ -1,0 +1,48 @@
+function enlargeText(){
+    document.getElementById('p1').style.fontSize = "5em";
+    document.getElementById('p2').style.fontSize = "7em";
+    document.getElementById('p3').style.fontSize = "9em";
+    document.getElementById('p4').style.fontSize = "11em";
+}
+
+function decreaseText(){
+    document.getElementById('p1').style.fontSize = "1em";
+    document.getElementById('p2').style.fontSize = "2em";
+    document.getElementById('p3').style.fontSize = "3em";
+    document.getElementById('p4').style.fontSize = "4em";
+}
+
+function hide(){
+    document.getElementById('cats').className = "hidden";
+}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="hideim.js"></script>
+
+    <style> .hidden {display:none;}</style>
+  <body>
+    <img src="cat.jpeg" id="cats" onclick="hide();">
+  </body>
+  </head>
+</html>
+
+function hide(){
+    document.getElementById('cat').className = "hidden";
+}
+
+<html>
+    <head>
+        <script type="text/javascript" src="fnSettingStyle.js"></script>
+
+    </head>
+    <body>
+        <p id="p1">Hello my name is Rocco Sladky</p>
+        <p id="p2">My favorite sport is baseball</p>
+        <p id="p3">My favorite class is math<p/>
+        <p id="p4">Hello<p/>
+        <button type="button" onclick="enlargeText()">Increase Font Size</button>
+        <button type="button" onclick="decreaseText()">Decrease Font Size</button>
+    </body>
+</html>
